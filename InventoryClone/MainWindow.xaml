@@ -7,13 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <local:URawMaterialInfo 
-            DataContext="{Binding Path=SelectedItem, ElementName=myComboBox}"
-            HorizontalAlignment="Left" Height="328" Margin="10,81,0,0" VerticalAlignment="Top" Width="772"/>
-        <Button x:Name="button" HorizontalAlignment="Left" Margin="307,21,0,0" VerticalAlignment="Top" Width="196" Height="50" FontSize="24" Content="Get Data"/>
+        <Button x:Name="button" HorizontalAlignment="Left" Margin="403,36,0,0" VerticalAlignment="Top" Width="100" Height="35" FontSize="24" Content="Get Data"/>
         <ComboBox x:Name="myComboBox" 
                   ItemsSource="{Binding Mode=OneWay}" DisplayMemberPath="PartNumber"
-                  HorizontalAlignment="Left" Margin="10,21,0,0" VerticalAlignment="Top" Width="145" Height="50"/>
+                  HorizontalAlignment="Left" Margin="540,21,0,0" VerticalAlignment="Top" Width="232" Height="25"/>
+        <Image x:Name="image" 
+               Source="Images/malishLogo.jpeg"
+               HorizontalAlignment="Left" Height="100" Margin="24,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <local:URawMaterialInfo 
+            DataContext="{Binding Path=SelectedItem, ElementName=myComboBox }"
+            HorizontalAlignment="Left" Height="226" Margin="0,147,0,0" VerticalAlignment="Top" Width="748"/>
 
 
 

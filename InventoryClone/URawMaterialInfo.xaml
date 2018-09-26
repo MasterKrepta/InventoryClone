@@ -8,27 +8,27 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto" MinHeight="33"/>
+            <RowDefinition Height="auto" MinHeight="52"/>
+            <RowDefinition Height="auto" MinHeight="52"/>
+            <RowDefinition Height="auto" MinHeight="48"/>
+            <RowDefinition Height="auto" MinHeight="265"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="5*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="label" Content="Part Number" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" FontSize="24" Height="42" Width="280"/>
-        <Label x:Name="label1" Content="Part Description" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="24" Height="42" Width="280"/>
-        <Label x:Name="label2" Content="Quantity" HorizontalAlignment="Left" Margin="10,29,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="24" Height="42" Width="280"/>
-        <Label x:Name="label3" Content="Location" HorizontalAlignment="Left" Margin="10,30,0,0" Grid.Row="3" VerticalAlignment="Top" FontSize="24" Height="42" Width="280"/>
-        <Label x:Name="label4" Content="Price" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" FontSize="24" Height="42" Width="290"/>
-        <TextBox x:Name="txtPartNum" Grid.Column="1" HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" FontSize="24" Text="{Binding Path=PartNumber}"/>
-        <TextBox x:Name="txtPartDescription" Grid.Column="1" HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" FontSize="24" Text="{Binding Path=PartDescription}"/>
-        <TextBox x:Name="txtQty" Grid.Column="1" HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" FontSize="24" Text="{Binding Path=Quantity}"/>
-        <TextBox x:Name="txtLocation" Grid.Column="1" HorizontalAlignment="Left" Height="50" Margin="10,6,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" FontSize="24" Text="{Binding Path=Location}"/>
-        <TextBox x:Name="txtPrice" Grid.Column="1" HorizontalAlignment="Left" Height="50" Margin="10,0,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" FontSize="24" Text="{Binding Path=Price}"/>
+        <Label x:Name="label" Content="Part Number" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="16" Height="33" Width="280"/>
+        <Label x:Name="label1" Content="Part Description" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="16" Height="42" Width="280"/>
+        <Label x:Name="label2" Content="Quantity" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="16" Height="42" Width="280"/>
+        <Label x:Name="label3" Content="Location" HorizontalAlignment="Left" Margin="10,6,0,0" Grid.Row="3" VerticalAlignment="Top" FontSize="16" Height="42" Width="280"/>
+        <Label x:Name="label4" Content="Price" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="4" VerticalAlignment="Top" FontSize="16" Height="42" Width="290"/>
+        <TextBox x:Name="txtPartNum" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" FontSize="16" Text="{Binding Path=PartNumber}"/>
+        <TextBox x:Name="txtPartDescription" Grid.Column="1" HorizontalAlignment="Left" Height="32" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" FontSize="16" Text="{Binding Path=PartDescription}"/>
+        <TextBox x:Name="txtQty" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" FontSize="16" Text="{Binding Path=Quantity}"/>
+        <TextBox x:Name="txtLocation" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="10,6,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" FontSize="16" Text="{Binding Path=Location}"/>
+        <TextBox x:Name="txtPrice" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" FontSize="16" Text="{Binding Path=Price}"/>
 
     </Grid>
 </UserControl>
